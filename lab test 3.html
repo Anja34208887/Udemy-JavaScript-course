@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title> lab test 3 </title>
+	</head>
+	
+	<body>
+		<script language = "javascript" type = text/javascript>
+		//declare variables
+		var age = 10;
+		var discountCode = "C";
+		var discountRate;
+		var amountOfSale = 27.95;
+		
+		if (age <= 18)
+		{
+			document.write("You are just a pup!");
+		}
+		else if (age >= 18 && age <= 29)
+		{
+			document.write("Welcome young adult");
+		}
+		else if (age >= 30 && age <= 39)
+		{
+			document.write("Get serious and have a family");
+		}
+		else if (age >= 40 && age <= 49)
+		{
+			document.write("Save for retirement");
+		}
+		else if (age >= 50 && age <= 59)
+		{
+			document.write("Enjoy life");
+		}
+		else if (age >= 60)
+		{
+			document.write("60 is the new 40");
+		}
+		
+			
+		document.write("<br/>");
+		
+		switch(discountCode)
+		{
+			case "A":
+			case "a":
+				discountRate = 0.0325;
+				break;
+			case "B":
+			case "b":
+				discountRate = 0.05;
+				break;
+			case "C":
+			case "c":
+				discountRate = 0.075;
+				break;
+			case "D":
+			case "d":
+				discountRate = 0.1;
+				break;
+		}
+		
+		document.write("Amount of sale: S" + (amountOfSale - (amountOfSale * discountRate)));
+		
+	
+		</script>
+	</body>
+
+</html>
