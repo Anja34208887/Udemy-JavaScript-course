@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd>
+	
+<html long = "en">
+	<head>
+		<title> Conditional </title>
+	<head>
+	
+	<body>
+	<script language = "javascript" type = "text/javascript">
+		/*
+		comparison operators
+		== equivalent 
+			1 == "1" true
+		=== equivalent value and type
+			1 === "1" false
+		> < >= <= !=
+		
+		&& AND
+		// OR
+		*/
+		//variable declaration and initialisation
+		var age = 19;
+		
+		//boolean variable
+		var citizen = true;
+		
+		//conditional
+		if (age >= 18 && citizen == true)
+		{
+			document.write("You can vote" + "<br/>");
+		}
+		else
+		{
+			document.write("You cannot vote" + "<br/>");
+		}
+		
+		var name = "Anja";
+		// if else if
+		if (name == "Anja") //equivalency
+		{
+			document.write("You are the creator" + "<br/>");
+		}
+		else if (name == "Cobus")
+		{
+			document.write("You are the supporter" + "<br/>");
+		}
+		else
+		{
+			document.write("You are the user" + "<br/>");
+		}
+		
+		//switch statement
+		var letetrGrade = "A";
+		
+		switch(letetrGrade)
+		{
+			case "A":
+			case "a": //to allow lower cases
+				document.write("Excellent");
+				break; //break out of the switch or the rest will print
+			case "B":
+			case "b":
+				document.write("Good");
+				break;
+			case "C":
+			case "c":
+				document.write("Average");
+				break;
+			case "D":
+			case "d":
+				document.write("Low");
+				break;
+			case "F":
+			case "f":
+				document.write("Fail");
+				break;
+			default:
+				document.write("Invalid grade");
+		}
+		
+	</script>
+	</body>
+</html>
