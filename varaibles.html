@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd>
+	
+<html long = "en">
+	<head>
+		<title> </title>
+	<head>
+	
+	<body>
+	<script language = "javascript" type = "text/javascript">
+	//declaring a variable 
+	//the var is optional but if left out there is a problem with variable scope
+	//always use var
+	var username = "Anja Anderson";
+	
+	//2nd way
+	var userName; //declaration
+	userName = "Cobus Niemandt"; //initialization
+	
+	var age = 21;
+	
+	//output variable value
+	document.write(username + "<br/>");
+	document.write(userName + "<br/>");
+	document.write("Age:" + age + "<br/>");
+	age = 24; //reassign value of variable
+	document.write("Age:" + age + "<br/>");
+	
+	//variable operators
+	//no nead to declare var type
+	var operandOne = 125;
+	var operandTwo = 15.371;
+	
+	document.write(operandOne + "<br/>");
+	document.write(operandTwo + "<br/>");
+	
+	//basic operators
+	document.write("Addition: " + (operandOne + operandTwo) + "<br/>");
+	document.write("Subtraction: " + (operandOne - operandTwo) + "<br/>");
+	document.write("Multiplication: " + (operandOne * operandTwo) + "<br/>");
+	document.write("Division: " + (operandOne / operandTwo) + "<br/>");
+	
+	//additional operators
+	document.write("MOD: " + (operandOne%operandTwo) + "<br/>");
+	//++operandOne prefix: inc takes place then the rest of the expression is evaluated
+	//inc postfix
+	operandOne++;
+	document.write(operandOne + "<br/>");
+	//dec
+	operandTwo--;
+	document.write(operandTwo + "<br/>");
+	</script>
+	</body>
+</html>
