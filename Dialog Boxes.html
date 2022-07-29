@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd>
+	
+<html long = "en">
+	<head>
+		<title>Dialog boxes</title>
+	</head>
+	
+	<body>
+		<script language = "javascript" type = "text/javascript">
+		//3 types of dialog boxes
+		var name = "Anja";
+		alert("Have a nice day " + name); //can also contain a variable
+		
+		var confirmation = confirm("Are you sure you want to exit");
+		//document.write(confirmation); //print the answer to the question
+		
+		if (confirmation == true) //can also just say if(confirmation)
+		{
+			document.write("Exiting application <br/>");
+		}
+		else
+		{
+			document.write("Cancel exit<br/>");
+		}
+		
+		var age = prompt("What is your age?", ""); //message and default value
+		document.write("You are " + age + " years old");
+		</script>
+	</body>
+</html>
