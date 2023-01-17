@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title> Lab 5 </title>
+	</head>
+	
+	<body>
+	
+	<!--how to create a table in html
+	<!-- figure out how to add a loop 
+	
+	<!-- <table border = "1" cellspacing = "0" > 
+		<tbody>
+			
+			<tr>
+				<th>Month</th>
+				<th>Interest Earned</th>
+				<th>Total</th>
+			</tr>
+			
+			<tr>
+				<td id = "i"></td>
+				<td id = "compound"></td>
+				<td id = "finalAmount"></td>
+			</tr>
+		</tbody>
+	</table> -->
+	
+		
+		<script language = "javascript" type = "text/javascript">
+			var x = 500;
+			while(x != -5)
+			{
+				document.write(x + "<br/>");
+				x = x - 5;
+			}
+			
+			y = 200
+			do
+			{
+				document.write("This will still work even though the initial condition is false");
+			}
+			while(y < 100)
+			
+			for(var i = 0; i < 11; i++)
+			{
+				document.write(i + ". I can count... WOW!" + "<br/>");
+			}
+			
+			
+			//take input xx
+			//do calculations ... find formula xxx
+			//display for num of months ... loop xxx
+			//do in a table tho ... see how to create a table with html xxx
+			var interestRate = 0.05;
+			var principal = 1000;
+			var term = 12;
+			var monthly = 12;
+			var finalAmount = 0;
+			var compound = 0;
+			//interestRate = parseFloat(prompt("Enter an interest rate (in decimal)"));
+			//principal= parseFloat(prompt("Enter an amount of money invested"));
+			//term = parseInt(prompt("Enter the term (in months)"));
+			
+			for(var i = 0; i < term+1; i++)
+			{
+				finalAmount = principal * (Math.pow((1 + interestRate),i));
+				compound = finalAmount - principal;
+				document.write(i + ". " + finalAmount + " ### interest earned: " + compound + "<br/>" );
+	
+				document.getElementById("i").innerHTML = i;
+				document.getElementById("compound").innerHTML = compound;
+				document.getElementById("finalAmount").innerHTML = finalAmount;
+			}
+			
+			
+		</script>
+	</body>
+</html>
