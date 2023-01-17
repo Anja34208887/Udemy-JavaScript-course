@@ -1,0 +1,23 @@
+<!-- put functions in seperate files or in the head and script of the html -->
+<html>
+	<head>
+		<title> Events </title>
+		<script language = "javascript" type = "text/javascript">
+		//write functions here 
+			function onButtonClick()
+			{
+				alert("Well done");
+			}
+			
+			function whenPageLoads()
+			{
+				alert("Welcome to my page");
+			}
+		</script>
+	</head>
+	<body onload = "whenPageLoads()">
+		<!-- add a button -->
+		<input type= "button" value = "click me" onclick = "onButtonClick()"/>
+		<!-- other functions : onmouseover etc -->
+	</body>
+</html>
