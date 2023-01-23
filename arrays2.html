@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> manipulating arrays </title>
+	</head>
+	<body>
+		<script language = "javascript" type = "text/javascript">
+			var grades = [85, 92, 70, 63, 55, 92, 88, 77, 91, 91];
+			document.write(grades[9] + "<br/>");
+		
+			grades.push(100, 63);
+			var poppedOff = grades.pop();
+			//loop through array without knowing its lenght
+			//for in loop
+			for(x in grades)
+			{
+				document.write("Iteration: " + x);
+				document.write("<br/>" + grades[x] + "<br/>");
+			}
+			
+			document.write("<br/> Popped off: " + poppedOff);
+		
+			var names = ["phill", "bob", "tom", "oscar", "mary", "angela"];
+			names.sort();
+			
+			document.write("<br/>");
+			for(var y = 0; y < names.length; y++)
+			{
+				document.write(names[y] + "<br/>");
+			}
+		</script>
+	</body>
+</html>

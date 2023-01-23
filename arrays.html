@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title> Basic Arrays </title>
+	</head>
+	<body>
+		<script language = "javascript" type = "text/javascript">
+			//Standard way to create an array
+			var firstNames = new Array(); //instantiation of an Array() object
+		
+			firstNames[0] = "mark";
+			firstNames[1] = "colleen";
+			firstNames[2] = "Anja";
+			firstNames[3] = "Cobus";
+			
+			//condensed method 
+			var animals = new Array("dog", "cat", "mouse");
+			
+			//literal array
+			var companies = ["apple", "google", "singular systems", "sapconet", "epi use"];
+		
+			//display values
+			alert(firstNames[3]);
+			alert(animals[1]);
+			alert(companies[3]);
+			
+			for(var i = 0; i < firstNames.length; i++)
+			{
+				document.write(firstNames[i] + "<br/>");
+			}
+			
+			//modify values
+			firstNames[0] = "Brian";
+			
+			//display again
+			for(var i = 0; i < firstNames.length; i++)
+			{
+				document.write(firstNames[i] + "<br/>");
+			}
+		</script>
+	</body>
+</html>
