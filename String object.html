@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title> The string object </title>
+	</head>
+	<body>
+		<script language = "javascript" type = "text/javascript">
+			var phrase = "If you are strong enough there are no precedents";
+			
+			document.write("length: " + phrase.length);
+			document.write("<br/>");
+		
+			//charAt() gives char at specific position
+			
+			for(var i = 0; i < phrase.length; i++)
+			{
+				document.write(i + ": " + phrase.charAt(i));
+				document.write("  |  " +  + phrase.charCodeAt(i)); //unicode values
+				document.write("<br/>");
+			}
+			
+			//where something occurs in the string
+			document.write("<br/>");
+			document.write("Index of s: " + phrase.indexOf('s'));
+		
+			//replace method
+			document.write("<br/>");
+			document.write(phrase.replace("strong", "attractive"));
+			document.write("<br/>");
+			document.write(phrase); //replace does not mutate the string in memory. Only returns a value. Have to capture in a var
+			document.write("<br/>");
+			
+			var names = "Anja, Cobus, Brian, Kayla, Bronwyn";
+			
+			//split method converts string object into array
+			var moreNames = names.split(',');
+			
+			for(var x = 0; x < moreNames.length; x++)
+			{
+				document.write(moreNames[x]);
+				document.write("<br/>");
+			}
+		</script>
+	</body>
+</html>
+			
